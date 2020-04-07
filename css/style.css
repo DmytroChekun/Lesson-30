@@ -1,0 +1,114 @@
+body{
+    background-image: linear-gradient(to right top, #8c9cd5, #8093d1, #738acd, #6682c8, #5879c4, #4882cd, #328bd5, #0094db, #00afe9, #00caf1, #0be3f3, #5ffbf1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.boxstyle{
+    border: 4px solid steelblue;
+    background-image: linear-gradient(to right top, #4682b4, #00a5d0, #00c5be, #00de80, #a8eb12);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    width: 40vw;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+textarea{
+    border: 4px solid #4682b4;
+    background-image: radial-gradient(circle, #8ff9f0, #87f2f8, #86e9fe, #8ce1ff, #96d7ff, #9ad7ff, #9dd8ff, #a1d8ff, #a1e2ff, #a6ebfd, #aff3fa, #bdfbf7);
+    background-repeat: no-repeat;
+    color: rgb(44, 65, 102);
+    width: 40.5vw;
+    margin-top: 15px;
+    margin-left: 29.1vw;
+    padding: 10px;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.display-switcher {
+    display: none;
+}
+
+#sortClicker1, #sortClicker2, #sortClicker3{
+    background-color: steelblue;
+    cursor: pointer;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+#sortClicker1:hover, #sortClicker2:hover, #sortClicker3:hover{
+    background-color: #00de80;
+    color: black;
+    
+}
+
+.rubberbox{
+    display: flex;
+    /* resize: both; */
+    /* overflow: hidden; */
+    border: none;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 400px;
+    min-height: 150px;
+
+}
+.resizers{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    outline: 4px solid steelblue;
+}
+
+
+.resizer{
+    cursor: se-resize;
+    background-image: url(../images/ar.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    opacity: 0.25;
+}
+
+.resizer1{
+    left: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+.resizer2{
+    right: 0;
+    top: 0;
+    transform: rotate(-90deg);
+    cursor: sw-resize;
+}
+.resizer3{
+    right: 0;
+    bottom: 0;
+}
+.resizer4{
+    left: 0;
+    bottom: 0;
+    transform: rotate(90deg);
+    cursor: sw-resize;
+}
+
+.text{
+    padding: 10px;
+}
+
